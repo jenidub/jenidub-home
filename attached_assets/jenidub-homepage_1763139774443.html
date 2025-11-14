@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeniDub - Think Like a Programmer, No Code Required</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --pacific-teal: #008B8B;
+            --warm-coral: #FF6B6B;
+            --sage-green: #9CAF88;
+            --dark-text: #2C3E50;
+            --light-bg: #F8F9FA;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--pacific-teal) 0%, var(--sage-green) 100%);
+            color: var(--white);
+            padding: 120px 20px 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--warm-coral);
+            color: var(--white);
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-subtext {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Mini Bio Section */
+        .mini-bio {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+
+        .bio-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .bio-photo {
+            flex-shrink: 0;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: var(--sage-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--white);
+            border: 5px solid var(--pacific-teal);
+        }
+
+        .bio-text {
+            flex: 1;
+        }
+
+        .bio-text p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .text-link {
+            color: var(--pacific-teal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .text-link:hover {
+            color: var(--warm-coral);
+        }
+
+        .text-link::after {
+            content: " →";
+            margin-left: 5px;
+        }
+
+        /* Three Skills Section */
+        .three-skills {
+            padding: 80px 20px;
+            background: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--dark-text);
+            margin-bottom: 20px;
+        }
+
+        .section-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: var(--dark-text);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.5rem;
+            color: var(--pacific-teal);
+            margin-bottom: 15px;
+        }
+
+        .skill-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Cali Chill Philosophy */
+        .cali-chill {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+
+        .philosophy-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .philosophy-item {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .philosophy-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .philosophy-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .philosophy-item h3 {
+            color: var(--warm-coral);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .philosophy-item p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Two Path CTA */
+        .two-path-cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--pacific-teal) 0%, var(--sage-green) 100%);
+            color: var(--white);
+        }
+
+        .paths-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            max-width: 1000px;
+            margin: 50px auto 0;
+        }
+
+        .path-card {
+            background: var(--white);
+            color: var(--dark-text);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .path-card h3 {
+            font-size: 1.8rem;
+            color: var(--pacific-teal);
+            margin-bottom: 15px;
+        }
+
+        .path-card p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .path-button {
+            display: inline-block;
+            background: var(--warm-coral);
+            color: var(--white);
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .path-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-text);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .bio-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bio-photo {
+                width: 200px;
+                height: 200px;
+                font-size: 4rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .skills-grid,
+            .philosophy-grid,
+            .paths-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Think Like a Programmer,<br>No Code Required</h1>
+            <p>You don't need to learn coding to thrive in the AI age—but you do need to think like someone who does. Learn the three core thinking skills that make programmers great problem-solvers.</p>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto; font-weight: 500;">"Think Like a Programmer, No Code Required" - a 4-episode series teaching you the three thinking skills that make programmers great problem-solvers.</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 15px;">
+                <div style="background: rgba(255, 255, 255, 0.2); border: 2px solid var(--warm-coral); border-radius: 10px; padding: 15px 25px; font-size: 1.2rem; font-weight: 600;">
+                    🎬 First Episode Launches January 7, 2026!
+                </div>
+                <a href="#" class="cta-button" style="margin: 0;">Subscribe to the JeniDub Channel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Bio Section -->
+    <section class="mini-bio">
+        <div class="bio-content">
+            <div class="bio-photo">JW</div>
+            <div class="bio-text">
+                <p>Most developers can code. Few can teach. I'm Jeni Williams—a full-stack developer with 10+ years of experience AND a Master's in Special Education with 20+ years teaching people of all ages. I know how programmers think, and I know how to make that thinking accessible to everyone. I teach at Year Up and run JeniDub Tech Consulting, helping professionals thrive in the AI age without becoming programmers themselves.</p>
+                <a href="#" class="text-link">Learn More About Jeni</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Skills Section -->
+    <section class="three-skills">
+        <div class="container">
+            <h2 class="section-title">The Three Skills You'll Master</h2>
+            <p class="section-intro">These are the thinking skills that make programmers effective problem-solvers:</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🧩</div>
+                    <h3>Decomposition</h3>
+                    <p>Break complex problems into manageable pieces. Turn "overwhelming" into "doable."</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🔍</div>
+                    <h3>Critical Thinking</h3>
+                    <p>Question assumptions, test results, spot errors. AI lies with confidence—learn to catch it.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">💬</div>
+                    <h3>Effective Communication</h3>
+                    <p>Give clear, contextual information. Get better results from AI and humans alike.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cali Chill Philosophy Section -->
+    <section class="cali-chill">
+        <div class="container">
+            <h2 class="section-title">The Cali Chill Philosophy</h2>
+            <p class="philosophy-intro">Technology education doesn't have to be intimidating. Here's how I approach it differently:</p>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">⏱️</div>
+                    <h3>Patient, Not Rushed</h3>
+                    <p>I've taught everyone from young children to elderly adults. I know that learning happens at different paces, and that's okay. We move at your speed.</p>
+                </div>
+                
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">🤝</div>
+                    <h3>Accessible, Not Intimidating</h3>
+                    <p>No tech jargon. No assumptions. No making you feel stupid for asking questions. If you don't understand something, that's on me to explain it better.</p>
+                </div>
+                
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">🎯</div>
+                    <h3>Independence-Building, Not Dependency-Creating</h3>
+                    <p>My goal isn't to keep you coming back forever. It's to teach you thinking skills you can use on your own. Success means you <em>don't</em> need me anymore.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Path CTA Section -->
+    <section class="two-path-cta">
+        <div class="container">
+            <h2 class="section-title">Ready to Get Started?</h2>
+            
+            <div class="paths-container">
+                <div class="path-card">
+                    <h3>Want to Learn?</h3>
+                    <p>Join my free video series "Think Like a Programmer, No Code Required" launching January 7, 2026. 8 episodes teaching decomposition, critical thinking, and effective communication.</p>
+                    <a href="#" class="path-button">Get Notified When It Launches →</a>
+                </div>
+                
+                <div class="path-card">
+                    <h3>Need Help Now?</h3>
+                    <p>Book a free 15-minute consultation with JeniDub Tech Consulting. We'll discuss your tech challenges and explore how I can help.</p>
+                    <a href="#" class="path-button">Schedule Your Free Call →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 JeniDub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

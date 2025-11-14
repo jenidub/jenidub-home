@@ -1,0 +1,65 @@
+Perfect! Here's the updated prompt:
+
+---
+
+# Replit Prompt for JeniDub Homepage
+
+I need help building a professional brand website homepage for JeniDub. I have the complete HTML structure and content ready, and I'd like you to reference the design style from the attached Podia screenshot.
+
+## Brand Overview
+**JeniDub** is a tech education brand teaching professionals to "Think Like a Programmer, No Code Required." The brand focuses on making programmer thinking accessible to non-technical professionals navigating AI adoption.
+
+**Brand Identity:**
+- **Colors:** Pacific Teal (#008B8B), Warm Coral (#FF6B6B), Sage Green (#9CAF88)
+- **Voice:** "Cali Chill" - patient, approachable, professional but not stuffy
+- **Target Audience:** Professionals ages 25-45 working with AI, career changers, non-technical team members
+
+## Current HTML File
+I have a complete HTML file with all content and styling (attached separately). Please use this as the foundation, but incorporate design elements from the attached Podia screenshot.
+
+## Content Sections (In Order)
+1. **Hero Section** - Gradient background with headline, series description, launch announcement, and YouTube subscribe CTA
+2. **Mini Bio Section** - Photo placeholder + bio text with link to About page
+3. **Three Skills Section** - Three cards with icons explaining Decomposition, Critical Thinking, and Effective Communication
+4. **Cali Chill Philosophy** - Three cards with icons explaining the teaching approach
+5. **Two-Path CTA Section** - Gradient background with two options: "Want to Learn?" and "Need Help Now?"
+
+## Design Requirements
+
+**From Podia Reference (see attached screenshot):**
+- Clean, modern layout with good whitespace
+- Professional card designs with subtle shadows
+- Smooth section transitions
+- Mobile-responsive grid layouts
+- Clear visual hierarchy
+- Professional typography
+
+**Brand-Specific:**
+- Use brand colors: Pacific Teal, Warm Coral, Sage Green
+- Alternating section backgrounds (white/light gray)
+- Gradient backgrounds on Hero and CTA sections
+- Card hover effects (subtle lift)
+- Rounded corners on buttons and cards
+- Professional but approachable aesthetic
+
+## Specific Elements to Match from Podia
+(Reference attached screenshot)
+- Card styling and spacing
+- Button design and hover states
+- Section padding and rhythm
+- Typography hierarchy
+- Overall professional polish
+
+## What I Need
+Please create a production-ready homepage that:
+1. Uses my existing HTML content structure
+2. Incorporates the design aesthetic from the Podia screenshot
+3. Maintains my brand colors and identity
+4. Is fully responsive and polished
+5. Includes smooth interactions and professional finish
+
+The final result should feel like a professional course creator's website (like Podia) but with JeniDub's unique brand personality.
+
+---
+
+**Perfect! This version lets Replit choose the best tech stack while giving clear design direction.**
