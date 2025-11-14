@@ -1,13 +1,17 @@
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/JeniDub_Logo_Primary_1763140230253.png";
 
 export default function Navigation() {
   return (
     <header className="w-full bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <h1 className="text-2xl font-bold text-primary" data-testid="text-logo">
-            JeniDub
-          </h1>
+          <img 
+            src={logoImage} 
+            alt="JeniDub Logo" 
+            className="h-10 w-auto" 
+            data-testid="img-logo"
+          />
           <nav className="hidden md:flex items-center gap-6">
             <a
               href="#about"

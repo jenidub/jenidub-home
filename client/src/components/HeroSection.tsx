@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import DecorativeShapes from "./DecorativeShapes";
+import brainBgImage from "@assets/JeniDub Zoom Background Cover Image_1763140269893.png";
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-primary via-primary/95 to-accent text-white overflow-hidden">
-      <DecorativeShapes />
+    <section className="relative text-white overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center" 
+        style={{ backgroundImage: `url(${brainBgImage})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
       <div className="container mx-auto px-6 py-24 md:py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
