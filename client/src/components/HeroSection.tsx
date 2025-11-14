@@ -18,24 +18,30 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl mb-8 opacity-95 leading-relaxed" data-testid="text-hero-description">
             You don't need to learn coding to thrive in the AI age—but you do need to think like someone who does. Learn the three core thinking skills that make programmers great problem-solvers.
           </p>
-          <p className="text-base md:text-lg mb-8 font-medium max-w-3xl mx-auto" data-testid="text-series-info">
+          <p className="text-base md:text-lg mb-10 font-medium max-w-3xl mx-auto" data-testid="text-series-info">
             "Think Like a Programmer, No Code Required" - a 4-episode series teaching you the three thinking skills that make programmers great problem-solvers.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6">
-            <Badge
-              variant="outline"
-              className="bg-white/20 border-2 border-secondary text-white px-6 py-3 text-base font-semibold backdrop-blur-sm"
-              data-testid="badge-launch-date"
-            >
-              🎬 First Episode Launches January 7, 2026!
-            </Badge>
-            <Button
-              size="lg"
-              className="bg-foreground text-background hover:bg-foreground/90 font-semibold text-lg px-8 py-6 rounded-full"
-              data-testid="button-subscribe"
-            >
-              Subscribe to the JeniDub Channel
-            </Button>
+          <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
+              <div className="flex-1 flex justify-center lg:justify-end">
+                <div className="bg-white/10 backdrop-blur-sm border-2 border-secondary/80 rounded-xl px-8 py-4 inline-flex items-center gap-3" data-testid="badge-launch-date">
+                  <span className="text-3xl">🎬</span>
+                  <div className="text-left">
+                    <div className="text-sm font-medium text-white/80">First Episode Launches</div>
+                    <div className="text-xl font-bold text-white">January 7, 2026!</div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1 flex justify-center lg:justify-start">
+                <Button
+                  size="lg"
+                  className="bg-secondary text-white hover:bg-secondary/90 font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+                  data-testid="button-subscribe"
+                >
+                  Subscribe to the JeniDub Channel
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
