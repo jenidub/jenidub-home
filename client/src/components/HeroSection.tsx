@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
       <div className="container mx-auto px-6 py-24 md:py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg md:text-xl mb-10 opacity-95 leading-relaxed" data-testid="text-hero-description">
+          <p className="text-xl md:text-3xl mb-10 opacity-95 leading-relaxed font-medium" data-testid="text-hero-description">
             You don't need to learn coding to thrive in the AI age—but you do need to think like someone who does. Learn the three core thinking skills that make programmers great problem-solvers.
           </p>
           <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-secondary/90">
