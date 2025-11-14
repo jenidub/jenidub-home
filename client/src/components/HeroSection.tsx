@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import brainBgImage from "@assets/JeniDub Zoom Background Cover Image_1763140269893.png";
+import logoWhiteImage from "@assets/JeniDub_Logo_Primary_White_1763150680484.png";
 
 export default function HeroSection() {
   return (
@@ -12,7 +13,13 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
       <div className="container mx-auto px-6 py-24 md:py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xl md:text-3xl mb-10 opacity-95 leading-relaxed font-medium" data-testid="text-hero-description">
+          <img 
+            src={logoWhiteImage} 
+            alt="JeniDub - Your Guide for the AI Age" 
+            className="h-24 md:h-32 w-auto mx-auto mb-8" 
+            data-testid="img-hero-logo"
+          />
+          <p className="text-lg md:text-2xl mb-10 opacity-95 leading-relaxed font-medium" data-testid="text-hero-description">
             You don't need to learn coding to thrive in the AI age—but you do need to think like someone who does. Learn the three core thinking skills that make programmers great problem-solvers.
           </p>
           <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-secondary/90">
