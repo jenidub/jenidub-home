@@ -18,9 +18,12 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl mb-10 opacity-95 leading-relaxed" data-testid="text-hero-description">
             You don't need to learn coding to thrive in the AI age—but you do need to think like someone who does. Learn the three core thinking skills that make programmers great problem-solvers.
           </p>
-          <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+          <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-2xl p-8 border-4 border-secondary/90">
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-3" data-testid="text-series-title">
+              "Think Like a Programmer, No Code Required"
+            </h3>
             <p className="text-base md:text-lg mb-8 font-medium text-center" data-testid="text-series-info">
-              "Think Like a Programmer, No Code Required" - a 4-episode series teaching you the three thinking skills that make programmers great problem-solvers.
+              A 4-episode series teaching you the three thinking skills that make programmers great problem-solvers.
             </p>
             <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
               <div className="flex justify-center">
