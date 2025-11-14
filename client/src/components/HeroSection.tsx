@@ -22,9 +22,6 @@ export default function HeroSection() {
             <div className="text-secondary text-sm sm:text-base md:text-lg font-bold text-center mb-2" data-testid="text-coming-soon">
               COMING SOON
             </div>
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-2 sm:mb-3" data-testid="text-series-title">
-              "Think Like a Programmer, No Code Required"
-            </h3>
             <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 font-medium text-center px-2" data-testid="text-series-info">
               A 4-episode series teaching you the three thinking skills that make programmers great problem-solvers.
             </p>
