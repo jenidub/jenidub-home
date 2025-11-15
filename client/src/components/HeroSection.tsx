@@ -16,7 +16,7 @@ export default function HeroSection() {
           <img 
             src={logoWhiteImage} 
             alt="JeniDub - Your Guide for the AI Age" 
-            className="h-24 md:h-32 w-auto mx-auto mb-8" 
+            className="w-4/5 h-auto mx-auto mb-8" 
             data-testid="img-hero-logo"
           />
           <p className="text-lg md:text-2xl mb-10 opacity-95 leading-relaxed font-medium" data-testid="text-hero-description">
