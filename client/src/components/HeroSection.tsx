@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import brainBgImage from "@assets/JeniDub Zoom Background Cover Image_1763140269893.png";
-import logoWhiteImage from "@assets/JeniDub_Logo_Primary_White_1763150680484.png";
+import logoWhiteImage from "@assets/JeniDub_Logo_Secondary_White_1763265140819.png";
 
 export default function HeroSection() {
   return (
