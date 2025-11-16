@@ -11,12 +11,12 @@ export default function HeroSection() {
         style={{ backgroundImage: `url(${brainBgImage})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
-      <div className="container mx-auto px-6 py-2.5 relative z-10">
+      <div className="container mx-auto px-6 py-0.5 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={logoWhiteImage} 
             alt="JeniDub - Your Guide for the AI Age" 
-            className="w-4/5 h-auto mx-auto mb-2.5" 
+            className="w-4/5 h-auto mx-auto mb-0.5" 
             data-testid="img-hero-logo"
           />
           <p className="text-lg md:text-2xl mb-10 opacity-95 leading-relaxed font-medium" data-testid="text-hero-description">
