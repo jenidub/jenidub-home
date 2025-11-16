@@ -22,7 +22,7 @@ export default function HeroSection() {
           <p className="text-lg md:text-2xl mb-10 opacity-95 leading-relaxed font-medium" data-testid="text-hero-description">
             You don't need to learn coding to thrive in the AI age—but you do need to think like someone who does. Learn the three core thinking skills that make programmers great problem-solvers.
           </p>
-          <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-secondary/90">
+          <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-secondary/90 mb-2.5">
             <div className="text-secondary text-sm sm:text-base md:text-lg font-bold text-center mb-2" data-testid="text-coming-soon">
               COMING SOON
             </div>
