@@ -3,7 +3,7 @@ import DecorativeShapes from "./DecorativeShapes";
 
 export default function TwoPathSection() {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-primary via-primary/95 to-accent text-white overflow-hidden">
+    <section id="paths" className="relative py-20 bg-gradient-to-br from-primary via-primary/95 to-accent text-white overflow-hidden">
       <DecorativeShapes />
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12" data-testid="text-paths-title">

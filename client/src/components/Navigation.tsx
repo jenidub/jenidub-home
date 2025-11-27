@@ -28,14 +28,16 @@ export default function Navigation() {
             </a>
           </nav>
         </div>
-        <Button
-          variant="default"
-          size="sm"
-          className="bg-foreground text-background hover:bg-foreground/90"
-          data-testid="button-contact"
-        >
-          Get Started
-        </Button>
+        <a href="#paths">
+          <Button
+            variant="default"
+            size="sm"
+            className="bg-foreground text-background hover:bg-foreground/90"
+            data-testid="button-contact"
+          >
+            Get Started
+          </Button>
+        </a>
       </div>
     </header>
   );
