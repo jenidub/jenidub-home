@@ -43,13 +43,15 @@ export default function HeroSection() {
                 </div>
               </div>
               <div className="flex justify-center">
-                <Button
-                  size="lg"
-                  className="bg-secondary text-white hover:bg-secondary/90 font-bold text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105"
-                  data-testid="button-subscribe"
-                >
-                  Subscribe to the JeniDub Channel
-                </Button>
+                <a href="https://www.youtube.com/@jenidubca" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-secondary text-white hover:bg-secondary/90 font-bold text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+                    data-testid="button-subscribe"
+                  >
+                    Subscribe to the @JeniDubCA Channel
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
