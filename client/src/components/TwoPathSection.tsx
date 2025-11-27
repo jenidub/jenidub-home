@@ -14,13 +14,13 @@ export default function TwoPathSection() {
             title="Want to Learn?"
             description="Join the series and master programmer thinking at your own pace. Perfect for professionals navigating the AI age."
             buttonText="Subscribe on YouTube"
-            href="#subscribe"
+            href="https://www.youtube.com/@jenidubca"
           />
           <PathCard
             title="Need Help Now?"
             description="Get personalized consulting to solve your tech challenges. From AI adoption to process optimization, I can help."
             buttonText="Book a Consultation"
-            href="#consulting"
+            href="https://calendar.app.google/JQBA7aV22C8RcXMY6"
           />
         </div>
       </div>
