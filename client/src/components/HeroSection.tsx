@@ -38,7 +38,7 @@ export default function HeroSection() {
                   <span className="text-2xl md:text-3xl">🎬</span>
                   <div className="text-left">
                     <div className="text-xs sm:text-sm font-medium text-white/80">First Episode Launches</div>
-                    <div className="text-base sm:text-lg md:text-xl font-bold text-white">January 7, 2026!</div>
+                    <div className="text-base sm:text-lg md:text-xl font-bold text-white">January 8, 2026!</div>
                   </div>
                 </div>
               </div>
