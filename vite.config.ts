@@ -19,6 +19,7 @@ export default defineConfig({
         ]
       : []),
   ],
+  base: '/jenidub-home/',  // 👈 ADD THIS LINE
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
